@@ -19,12 +19,16 @@ body{
 .hero{
     min-height:100vh;
     display:flex;
+    justify-content:center;
     align-items:center;
-    justify-content:space-between;
-    padding:80px;
+    gap:80px;
+    max-width:1200px;
+    margin:auto;
+    padding:0 40px;
 }
 
 .hero-text{
+    flex:1;
     max-width:600px;
 }
 
@@ -52,13 +56,17 @@ body{
     border-radius:10px;
     font-weight:bold;
 }
+/* .hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+} */
 
 .hero-image img{
     width:350px;
     height:350px;
-    object-fit:cover;
     border-radius:50%;
-    border:5px solid #38bdf8;
+    object-fit:cover;
 }
 
 /* Projecten */
@@ -109,7 +117,69 @@ body{
     color:#38bdf8;
 }
 
+#contact{
+    background:#071a3b;
+    color:white;
+    padding:80px 50px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#contact h2{
+    font-size:3rem;
+    margin-bottom:25px;
+}
+
 #contact p{
-    margin:10px 0;
+    font-size:1.2rem;
+    margin-bottom:15px;
+}
+
+.contact-btn{
+    display:block;
+    width:300px;
+    background:#5a9df8;
+    color:white;
+    text-decoration:none;
+    padding:18px;
+    border-radius:8px;
+    margin-top:15px;
     font-size:1.1rem;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:#7ab0ff;
+    transform:translateX(5px);
+}
+.skills{
+    margin-top:40px;
+}
+
+.skills h3{
+    margin-bottom:15px;
+    font-size:2rem;
+    color:white;
+}
+
+.skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skills-list span{
+    background:#0f172a;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    border:1px solid #334155;
+    transition:0.3s;
+}
+
+.skills-list span:hover{
+    background:#38bdf8;
+    border-color:#38bdf8;
+    transform:translateY(-3px);
 }
