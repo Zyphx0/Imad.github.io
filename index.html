@@ -41,7 +41,7 @@
         </div>
 
         <div class="hero-image">
-            <img src="Fotos" alt="Profielfoto">
+            <img src="Fotos/1000028699.jpg" alt="Profielfoto">
         </div>
     </section>
 
@@ -54,17 +54,98 @@
             <div class="card">
                 <h3>Portfolio Website</h3>
                 <p>Mijn persoonlijke website gemaakt met HTML en CSS.</p>
+<pre><code>
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;section class="hero"&gt;
+    &lt;div class="hero-text"&gt;
+        &lt;h1&gt;Hallo, ik ben Imad&lt;/h1&gt;
+
+        &lt;h2&gt;Tweedejaars Software Development Student&lt;/h2&gt;
+
+        &lt;p&gt;
+            Ik ben een student aan Technova College met een passie voor
+            programmeren. Ik ben op zoek naar een stage waar ik een echte 
+            ervaring kan hebben met het grote wereld van programmeren. 
+            Op deze website vind je een
+            overzicht van mijn projecten en vaardigheden.
+        &lt;/p&gt;
+
+        &lt;a href="#projecten" class="button"&gt;Bekijk mijn projecten&lt;/a&gt;
+
+        &lt;div class="skills"&gt;
+            &lt;h3&gt;Skills&lt;/h3&gt;
+
+            &lt;div class="skills-list"&gt;
+                &lt;span&gt;C#&lt;/span&gt;
+                &lt;span&gt;C&lt;/span&gt;
+                &lt;span&gt;MySQL&lt;/span&gt;
+                &lt;span&gt;JSON&lt;/span&gt;
+                &lt;span&gt;Python&lt;/span&gt;
+                &lt;span&gt;HTML&lt;/span&gt;
+                &lt;span&gt;CSS&lt;/span&gt;
+                &lt;span&gt;GitHub&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+// Css
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    max-width:1200px;
+    margin:auto;
+    padding:0 40px;
+}
+pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 14px;
+    max-height: 250px;  
+    overflow: auto;     
+}
+</code></pre>
                 <p>Bekijk het op Github: <a href="https://github.com/Zyphx0/Zyphx0.github.io">https://github.com/Zyphx0/Zyphx0.github.io</a></p>
             </div>
 
             <div class="card">
-                <h3>Groente boer</h3>
-                <p></p>
+                <h3>Python - Adventure game</h3>
+                <pre><code>
+                
+                </code></pre>
+                <p>In deze projetc maak ik een kleine adventure game met Python.</p>
             </div>
 
             <div class="card">
-                <h3>School Project</h3>
-                <p>Softwareproject ontwikkeld tijdens mijn opleiding.</p>
+                <h3>C# & Sql - Huisarts </h3>
+                <pre><code>
+public DataTable ExecuteQuery(string query)
+{
+    DataTable dt = new DataTable();
+    try
+    {
+        using (MySqlConnection conn = new MySqlConnection(connectionString))
+        {
+            conn.Open();
+            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            {
+                cmd.Parameters.Add(new MySqlParameter(@"zoekfil", MySqlDbType.VarChar) 
+                { Value = "@Zoek" });
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+        }
+    }
+}
+                </code></pre>
+                <p>In deze project heb ik een huis arts applicatie gemaakt voor een huis arts waar die zijn patienten kan bewerken, verwijdere, notaties bij zetten en nieuwe patienten toevroegen.</p>
+                <p>Bekijk Het op Github:<a href="https://github.com/Zyphx0/Huisarts">https://github.com/Zyphx0/Huisarts</a></p>
             </div>
         </div>
     </section>

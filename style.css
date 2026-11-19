@@ -61,11 +61,25 @@ body{
     display:flex;
     justify-content:center;
 } */
+pre {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 14px;
+    max-height: 250px;  
+    overflow: auto;     
+}
 
+code {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+}
 .hero-image img{
-    width:350px;
-    height:350px;
-    border-radius:50%;
+    width:400px;
+    height:500px;
+    border-radius:100%;
     object-fit:cover;
 }
 
